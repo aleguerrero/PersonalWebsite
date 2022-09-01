@@ -12,6 +12,28 @@ function Technologies() {
                     </ul>
                 </div>
             </div>
+            <div className="databases">
+                <h4>Databases</h4>
+                <div className="listProgrammingLanguages">
+                    <ul>
+                        <li>Microsoft SQL Server</li>
+                        <li>Oracle</li>
+                        <li>PostgreSQL</li>
+                        <li>Firebase Realtime Database</li>
+                    </ul>
+                </div>
+            </div>
+            {/* <div className="databases">
+                <h4>Databases</h4>
+                <div className="listProgrammingLanguages">
+                    <ul>
+                        <li>Microsoft SQL Server</li>
+                        <li>Oracle</li>
+                        <li>PostgreSQL</li>
+                        <li>Firebase Realtime Database</li>
+                    </ul>
+                </div>
+            </div> */}
         </div>
     );
 }

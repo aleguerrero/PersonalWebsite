@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
+import Experience from './components/Experience';
+import Hobbies from './components/Hobbies';
 import Technologies from './components/Technologies';
 
 function App() {
 
   const [isShownAboutMe, setIsShownAboutMe] = useState(false);
   const [isShownTechnologies, setIsShownTechnologies] = useState(false);
-  const [isShownExperiencie, setIsShownExperience] = useState(false);
+  const [isShownExperience, setIsShownExperience] = useState(false);
   const [isShownHobbies, setIsShownHobbies] = useState(false);
   const [isShownContact, setIsShownContact] = useState(false);
 
@@ -65,6 +67,8 @@ function App() {
         </ul>
         {isShownAboutMe && <AboutMe />}
         {isShownTechnologies && <Technologies />}
+        {isShownExperience && <Experience />}
+        {isShownHobbies && <Hobbies />}
       </div>
     </div>
   );
