@@ -1,21 +1,5 @@
 const { default: mongoose, Schema } = require("mongoose");
 
-const experienceSchema = new mongoose.Schema({
-    companyName: {
-        required: true,
-        type: String
-    },
-    started: {
-        required: true,
-        type: String
-    },
-    ended: {
-        required: true,
-        type: Date
-    },
-    jobs: [{ tyope: Schema.Types.ObjectId, ref: 'Job' }]
-})
-
 const jobSchema = new mongoose.Schema({
     jobName: {
         required: true,
@@ -43,5 +27,21 @@ const jobSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Technology', technologySchema);
+const experienceSchema = new mongoose.Schema({
+    companyName: {
+        required: true,
+        type: String
+    },
+    started: {
+        required: true,
+        type: String
+    },
+    ended: {
+        required: true,
+        type: Date
+    },
+    jobs: [jobSchema]
+})
+
+module.exports = mongoose.model('Experience', experienceSchema);
 module.exports = mongoose.model('Job', jobSchema);
