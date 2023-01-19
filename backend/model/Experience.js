@@ -1,4 +1,5 @@
-const { default: mongoose, Schema } = require("mongoose");
+const { default: mongoose } = require("mongoose");
+const Schema = mongoose.Schema;
 
 const jobSchema = new mongoose.Schema({
     jobName: {
@@ -41,7 +42,8 @@ const experienceSchema = new mongoose.Schema({
         type: Date
     },
     jobs: [jobSchema]
+}, {
+    collection: 'Experience'
 })
 
 module.exports = mongoose.model('Experience', experienceSchema);
-module.exports = mongoose.model('Job', jobSchema);

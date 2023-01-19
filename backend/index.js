@@ -9,10 +9,10 @@ app.listen(3000, () =>  {
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-mongoose.connect(process.env.DATABASE_URL, () => console.log('Connected to DB!')); // process.env.DATABASE_URL
+mongoose.connect(process.env.DATABASE_URL, () => console.log('Connected to DB!')).catch(error => console.log(error)); // process.env.DATABASE_URL
 
 // Initiates routes
-const experienceRoute = require('./routes/experiences');
+const experienceRoute = require('./routes/Experience');
 
 app.use(express.json());
-app.use('/api/experiences', experienceRoute);
+app.use('/api/Experience', experienceRoute);
