@@ -1,4 +1,5 @@
 const { default: mongoose } = require("mongoose");
+const Schema = mongoose.Schema;
 
 const technologySchema = new mongoose.Schema({
     name: {
@@ -13,6 +14,8 @@ const technologySchema = new mongoose.Schema({
         required: true,
         type: Date
     }
+}, {
+    collection: 'Technologies'
 })
 
 module.exports = mongoose.model('Technology', technologySchema)
