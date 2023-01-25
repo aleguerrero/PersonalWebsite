@@ -14,7 +14,9 @@ mongoose.connect(process.env.DATABASE_URL, () => console.log('Connected to DB!')
 // Initiates routes
 const experienceRoute = require('./routes/Experience');
 const technologyRoute = require('./routes/Technology');
+const hobbyRoute = require('./routes/Hobby');
 
 app.use(express.json());
 app.use('/api/Experience', experienceRoute);
 app.use('/api/Technology', technologyRoute);
+app.use('/api/Hobby', hobbyRoute);
