@@ -17,6 +17,12 @@ const technologyRoute = require('./routes/Technology');
 const hobbyRoute = require('./routes/Hobby');
 
 app.use(express.json());
-app.use('/api/Experience', experienceRoute);
-app.use('/api/Technology', technologyRoute);
-app.use('/api/Hobby', hobbyRoute);
+app.use((req, res, next) => {
+    res.append('Access-Control-Allow-Origin', ['*']);
+    res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.append('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+})
+app.use('/api/experiences', experienceRoute);
+app.use('/api/technologies', technologyRoute);
+app.use('/api/hobbies', hobbyRoute);
