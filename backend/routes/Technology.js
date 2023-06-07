@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Technology = require('../model/Technology');
 
-router.get("/gettechnology", async (req, res) => {
+router.get("", async (req, res) => {
 
   // Looks for experiences
   const tecnologies = await Technology.find({}, function (err, data) {

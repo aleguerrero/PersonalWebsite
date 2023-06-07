@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Hobbies = require('../model/Hobbies');
 
-router.get("/gethobbies", async (req, res) => {
+router.get("", async (req, res) => {
 
   // Looks for hobbies
   const hobbies = await Hobbies.find({}, function (err, data) {

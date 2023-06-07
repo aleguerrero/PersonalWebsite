@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Experience = require('../model/Experience');
 
-router.get("/getexperience", async (req, res) => {
+router.get("", async (req, res) => {
 
   // Looks for experiences
   const experiences = await Experience.find({}, function (err, data) {
@@ -12,6 +12,11 @@ router.get("/getexperience", async (req, res) => {
 
   if (!experiences) return res.status(400).send('Experiences does not exist');
 
+  res.set({
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials" : true,
+    "Content-Type": "application/json"
+  });
   res.status(200).send(experiences);
 });
 

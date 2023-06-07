@@ -115,7 +115,7 @@ MongoClient.connect(url, function (err, db) {
     {
       companyName: "Accenture",
       started: new Date("2021-08-01"),
-      ended: "Present",
+      ended: new Date(),
       jobs: [
         {
           jobName: "Customer Service Associate",
