@@ -11,7 +11,7 @@ const hobbySchema = new mongoose.Schema({
         type: String
     }
 }, {
-    collection: 'Hobbies'
+    collection: 'hobbies'
 })
 
-module.exports = mongoose.model('Hobbies', hobbySchema)
+module.exports = mongoose.model('hobbies', hobbySchema)

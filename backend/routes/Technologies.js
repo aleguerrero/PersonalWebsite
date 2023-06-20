@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Technology = require('../model/Technology');
+const Technology = require('../model/Technologies');
 
 router.get("", async (req, res) => {
 

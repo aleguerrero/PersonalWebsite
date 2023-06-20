@@ -15,7 +15,7 @@ const technologySchema = new mongoose.Schema({
         type: Date
     }
 }, {
-    collection: 'Technologies'
+    collection: 'technologies'
 })
 
-module.exports = mongoose.model('Technology', technologySchema)
+module.exports = mongoose.model('technologies', technologySchema)

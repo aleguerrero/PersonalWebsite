@@ -43,7 +43,7 @@ const experienceSchema = new mongoose.Schema({
     },
     jobs: [jobSchema]
 }, {
-    collection: 'Experience'
+    collection: 'experiences'
 })
 
-module.exports = mongoose.model('Experience', experienceSchema);
+module.exports = mongoose.model('experiences', experienceSchema);
