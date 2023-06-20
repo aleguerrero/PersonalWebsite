@@ -1,0 +1,36 @@
+.experienceBlock {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    padding: 40px;
+    margin: 40px;
+}
+
+.experienceSummary {
+    width: 25%;
+    border-right: 2px solid rgb(131, 131, 131);
+    padding-bottom: 5px;
+}
+
+.experienceSummary h3 {
+    margin-top: 5px;
+}
+
+.experienceSummary h5 {
+    margin-bottom: 5px;
+}
+
+.jobTasks {
+    margin-left: 40px;
+    width: 75%;
+}
+
+.jobTasks h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.jobTasks .dates {
+    font-size: 0.75em;
+    color: rgb(131, 131, 131);
+}

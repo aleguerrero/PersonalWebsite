@@ -1,34 +1,41 @@
+import { useEffect, useState } from "react"
+import './Experience.css'
+import ExperienceSummary from "./ExperienceSummary";
+import JobTasks from "./JobTasks";
+
 function Experience() {
+    const [experiences, setExperiences] = useState();
+
+    const getExperiencesData = async () => {
+        const response = await fetch(
+            "http://localhost:3000/api/experiences"
+        ).then((response) => response.json());
+
+        setExperiences(response);
+    };
+
+    useEffect(() => {
+        getExperiencesData();
+    }, []);
+
     return (
-        <div className="Experience">
+        <div className="experiences">
             <ul>
-                <li>
-                    <h4>Accenture</h4>
-                    <h5>DevOps Engineer</h5>
-                </li>
-                <li>
-                    <h4>Information Technology Support</h4>
-                    <h5>DevOps Operations Engineer</h5>
-                </li>
-                <li>
-                    <h4>Tek Experts</h4>
-                    <h5>Azure DevOps Support Engineer</h5>
-                </li>
-                <li>
-                    <h4>Tek Experts</h4>
-                    <h5>Microsoft Dynamics ERP Senior Support Engineer</h5>
-                </li>
-                <li>
-                    <h4>Tek Experts</h4>
-                    <h5>Microsoft Dynamics ERP Support Engineer</h5>
-                </li>
-                <li>
-                    <h4>Amazon</h4>
-                    <h5>Customer Service Associate</h5>
-                </li>
+                {experiences &&
+                    experiences.map((experience) => (
+                        <li className="experienceBlock">
+                            <ExperienceSummary
+                                companyName={experience.companyName}
+                                startedDate={experience.started}
+                                endedDate={experience.ended}
+                            />
+                            <JobTasks tasks={experience.jobs} />
+                        </li>
+                    ))}
             </ul>
         </div>
-    );
+    )
+
 }
 
 export default Experience
