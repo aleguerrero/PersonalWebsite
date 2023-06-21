@@ -30,4 +30,4 @@ services:
     ports:
       - 3000:3000
     environment:
-      DATABASE_URL: mongodb://admin:secret@mongodb:27017/personalWebsite
+      DATABASE_URL: mongodb://appUserAdmin:secret@mongodb:27017/personalWebsite

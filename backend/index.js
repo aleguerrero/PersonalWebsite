@@ -7,7 +7,7 @@ app.listen(3000, () =>  {
 
 // initiates database
 const mongoose = require('mongoose');
-require('dotenv').config();
+// require('dotenv').config();
 
 mongoose.connect(process.env.DATABASE_URL, () => console.log('Connected to DB!')).catch(error => console.log(error)); // process.env.DATABASE_URL
 
