@@ -1,3 +1,5 @@
+import React from 'react';
+
 function ExperienceSummary(props) {
 
     const startedDate = new Date(props.startedDate).getDate();

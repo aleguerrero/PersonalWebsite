@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import './Experience.css'
 import ExperienceSummary from "./ExperienceSummary";
 import JobTasks from "./JobTasks";
+import React from 'react';
 
 function Experience() {
     const [experiences, setExperiences] = useState();
@@ -22,8 +23,8 @@ function Experience() {
         <div className="experiences">
             <ul>
                 {experiences &&
-                    experiences.map((experience) => (
-                        <li className="experienceBlock">
+                    experiences.map((experience, id) => (
+                        <li className="experienceBlock" key={id}>
                             <ExperienceSummary
                                 companyName={experience.companyName}
                                 startedDate={experience.started}
@@ -38,4 +39,4 @@ function Experience() {
 
 }
 
-export default Experience
+export default Experience;
