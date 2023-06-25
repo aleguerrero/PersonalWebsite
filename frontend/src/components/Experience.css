@@ -34,3 +34,15 @@
     font-size: 0.75em;
     color: rgb(131, 131, 131);
 }
+
+.taskBlock ul li {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 0.9em;
+    display: revert;
+    list-style-type: disc;
+}
+
+.skillsetTitle {
+    margin-top: 20px;
+}
