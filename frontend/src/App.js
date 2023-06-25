@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
@@ -59,7 +60,7 @@ function App() {
       <h3>Software Engineer</h3>
       <div className='options'>
         <ul>
-          <li><a onClick={handleClickAboutMe}>About Me</a></li>
+          <li><a onClick={handleClickAboutMe} href="/#">About Me</a></li>
           <li onClick={handleClickTechnologies}>Technologies</li>
           <li onClick={handleClickExperience}>Experience</li>
           <li onClick={handleClickHobbies}>Hobbies</li>
@@ -69,6 +70,7 @@ function App() {
         {isShownTechnologies && <Technologies />}
         {isShownExperience && <Experience />}
         {isShownHobbies && <Hobbies />}
+        {isShownContact && "test"}
       </div>
     </div>
   );
