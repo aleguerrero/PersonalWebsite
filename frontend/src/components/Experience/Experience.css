@@ -4,12 +4,17 @@
     text-align: left;
     padding: 40px;
     margin: 40px;
+    background-color: #fcf7f2;
 }
 
 .experienceSummary {
     width: 25%;
     border-right: 2px solid rgb(131, 131, 131);
     padding-bottom: 5px;
+}
+
+h3, h5 {
+    color: #283618;
 }
 
 .experienceSummary h3 {
@@ -41,8 +46,9 @@
     font-size: 0.9em;
     display: revert;
     list-style-type: disc;
+    
 }
 
 .skillsetTitle {
-    margin-top: 20px;
+    padding-top: 20px;
 }

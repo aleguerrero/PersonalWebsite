@@ -6,12 +6,12 @@ function JobTasks(props) {
         <div className="jobTasks">
             {props.tasks &&
                 props.tasks.map((task) => (
-                    <ul>
+                    <ul className='ulTasksSkillset'>
                         <h5>
                             {task.jobName}
                         </h5>
                         <div className="dates">
-                            {new Date(task.startedTimePosition).getMonth()}/{new Date(task.startedTimePosition).getFullYear()} - {new Date(task.endedTimePosition).getMonth()}/{new Date(task.endedTimePosition).getFullYear()}
+                            {new Date(task.startedTimePosition).getMonth() + 2}/{new Date(task.startedTimePosition).getFullYear()} - {new Date(task.endedTimePosition).getMonth() + 2}/{new Date(task.endedTimePosition).getFullYear()}
                         </div>
                         <li className="taskBlock">
                             <ul>

@@ -12,7 +12,7 @@ function Experience() {
             "http://localhost:3000/api/experiences"
         ).then((response) => response.json());
 
-        setExperiences(response);
+        setExperiences(response.reverse());
     };
 
     useEffect(() => {

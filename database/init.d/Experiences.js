@@ -95,6 +95,7 @@ db.experiences.insertMany([
           "Acknowledgement of releases, deployment and status of the servers and the product after changes applied, also attending production problems after deployment, also keeping in touch with the Software Development team to be on the same page",
         ],
         skillset: [
+          "AWS",
           "Windows Server (IIS Management, Event Viewer)",
           "SQL Server",
           "PowerShell",
@@ -112,13 +113,14 @@ db.experiences.insertMany([
     ended: new Date(),
     jobs: [
       {
-        jobName: "Customer Service Associate",
+        jobName: "DevOps Engineer",
         jobDuration: "Full Time",
-        startedTimePosition: new Date("2018-10-01"),
-        endedTimePosition: new Date("2019-05-01"),
+        startedTimePosition: new Date("2021-08-01"),
+        endedTimePosition: new Date("2022-09-01"),
         jobTasks: [
-          "Designing and implementing cloud architectures and solutions for internal and external projects",
-          "Building and deploying software through CI/CD practices",
+          "Lead the back-end and DevOps side of a cost rating internal project and developing a REST API from scratch using Azure Functions with Python and SQL Server for the database",
+          "Implemented CI/CD with pipelines and releases for the Front-end and Back-end sides of the project for the Sandbox and Production environment using Azure DevOps",
+          "Designing and implementing cloud architectures and solutions for internal and external projects of the company using cloud consoles on each, CLI and Terraform (or IaC)",
           "Working by the side of the Software Development teams and Management teams to discuss and achieve practical solutions for our customers’ requests"
         ],
         skillset: [
@@ -132,6 +134,29 @@ db.experiences.insertMany([
           "SQL Server"
         ],
       },
+      {
+        jobName: "Senior Software Engineer",
+        jobDuration: "Full Time",
+        startedTimePosition: new Date("2022-09-01"),
+        endedTimePosition: new Date(),
+        jobTasks: [
+          "Developing, maintaining and standardizing tools for the Accenture product named SynOps",
+          "Using Python with the Fast API framework, building, debugging and running the project using Docker to be deployed in a Kubernetes cluster",
+          "Managing conversations and meetings with different teams to be in sync for features and fixes in order to bring the product that the clients are looking for",
+          "Using Git through Azure DevOps Repos to keep our source code with certain branch strategies to have a standardized workflow and deployments"
+        ],
+        skillset: [
+          "Docker",
+          "CI/CD",
+          "Azure DevOps (Repos, Boards, Pipelines)",
+          "Azure",
+          "Terraform",
+          "Git",
+          "Python",
+          "FastAPI",
+          "PostgreSQL"
+        ]
+      }
     ],
   },
 ])

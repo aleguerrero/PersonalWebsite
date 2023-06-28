@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
-import Experience from './components/Experience';
+import Experience from './components/Experience/Experience';
 import Hobbies from './components/Hobbies';
 import Technologies from './components/Technologies';
 
@@ -57,10 +57,10 @@ function App() {
   return (
     <div className="App">
       <h1>Alejandro Guerrero Aguilar</h1>
-      <h3>Software Engineer</h3>
+      <h2>Software Engineer</h2>
       <div className='options'>
         <ul>
-          <li><a onClick={handleClickAboutMe} href="/#">About Me</a></li>
+          <li><a onClick={handleClickAboutMe}>About Me</a></li>
           <li onClick={handleClickTechnologies}>Technologies</li>
           <li onClick={handleClickExperience}>Experience</li>
           <li onClick={handleClickHobbies}>Hobbies</li>
