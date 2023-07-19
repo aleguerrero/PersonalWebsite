@@ -9,6 +9,10 @@ const hobbySchema = new mongoose.Schema({
     description: {
         required: true,
         type: String
+    },
+    imagePath: {
+        required: true,
+        type: String
     }
 }, {
     collection: 'hobbies'
