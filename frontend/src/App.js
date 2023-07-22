@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience/Experience';
-import Hobbies from './components/Hobbies';
+import Hobbies from './components/Hobbies/Hobbies';
 import Technologies from './components/Technologies';
 
 function App() {
