@@ -4,7 +4,7 @@ import './App.css';
 import AboutMe from './components/AboutMe/AboutMe';
 import Experience from './components/Experience/Experience';
 import Hobbies from './components/Hobbies/Hobbies';
-import Technologies from './components/Technologies';
+import Technologies from './components/Technologies/Technologies';
 
 function App() {
 
