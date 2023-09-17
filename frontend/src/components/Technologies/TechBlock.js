@@ -16,9 +16,10 @@ function TechBlock(props) {
     return (
         <div className="techblock">
             <h5>{props.name}</h5>
-            <span className="learnedOn">Learned on {learnedMonth + " " + learnedYear}</span>
+            <p className="learnedOn">Learned on {learnedMonth + " " + learnedYear}</p>
+            {boolFW ? (<b>Frameworks: </b>) : ("")}
+            {boolT ? (<b>Tools: </b>) : ("")}
             <ul>
-                {boolFW ? (<p>Frameworks: </p>) : ("")}
                 {boolFW ? (
                     props.frameworks
                     && props.frameworks.map((fw) => (
@@ -26,7 +27,6 @@ function TechBlock(props) {
                     ))
                 ) : ("")}
 
-                {boolT ? (<p>Tools: </p>) : ("")}
                 {boolT ? (
                     props.tools
                     && props.tools.map((t) => (
