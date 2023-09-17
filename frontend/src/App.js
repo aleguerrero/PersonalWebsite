@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe/AboutMe';
 import Experience from './components/Experience/Experience';
 import Hobbies from './components/Hobbies/Hobbies';
-import Technologies from './components/Technologies';
+import Technologies from './components/Technologies/Technologies';
 
 function App() {
 
@@ -53,6 +53,10 @@ function App() {
     setIsShownExperience(false);
     setIsShownHobbies(false);
   }
+
+  useEffect(() => {
+    document.title = 'Alejandro Guerrero Aguilar';
+  }, []);
 
   return (
     <div className="App">
