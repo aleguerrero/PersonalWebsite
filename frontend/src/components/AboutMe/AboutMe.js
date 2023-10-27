@@ -1,6 +1,9 @@
 import React from 'react';
 import "./AboutMe.css"
 import image from "./images/CL032.jpg" 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function AboutMe() {
 
@@ -11,14 +14,18 @@ function AboutMe() {
     }
 
     return (
-        <div className='AboutMeBlock'>
+        <Container className='AboutMeBlock'>
             <div className='myImage'>
                 <img src={image} alt="Looking good" />
             </div>
             <div className='aboutMeText'>
-                <h5>
-                    Hello! Welcome to my website!
-                </h5>
+                <Row>
+                    <Col>
+                        <h5>
+                            Hello! Welcome to my website!
+                        </h5>
+                    </Col>
+                </Row>
                 <p>
                     I'm Alejandro Guerrero Aguilar, I'm a {getDiffYears(new Date("05/17/1998"))} years old Software Engineer from San José, Costa Rica, with {getDiffYears(new Date("01/01/2016"))} years of experience.
                     I am deeply appasionate for computers and how do they work to run stuff, so that is why I took myself to this career, challenging myself everyday to learn something new
@@ -46,7 +53,7 @@ function AboutMe() {
                         For this website, I am using ReactJS in the front-end, Express for the back-end and MongoDB for the database.
                     </p>
             </div>
-        </div>
+        </Container>
     );
 }
 
