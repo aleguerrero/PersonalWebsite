@@ -1,27 +1,32 @@
 .AboutMeBlock {
-    display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: justify;
-    /* padding: 40px; */
-    margin: 40px;
-    background-color: #fcf7f2;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: justify;
+  padding: 40px;
+  margin: 40px;
+  background-color: #fcf7f2;
 }
 
-.hobbiesList li{
-    display: revert;
-    list-style-type: disc;
-    margin-top: 15px;
-    margin-left: 15px;
+.hobbiesList li {
+  display: revert;
+  list-style-type: disc;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .aboutMeText {
-    width: 70%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .myImage {
-    text-align: center;
-    margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1399px) {
+  .testtext {
+    padding-top: 40px;
+  }
 }
