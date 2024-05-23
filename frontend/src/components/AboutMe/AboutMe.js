@@ -1,7 +1,7 @@
-import React from 'react';
 import "./AboutMe.css"
 import image from "./images/CL032.jpg"
 import { Container, Row, Col, Image } from 'react-bootstrap';
+
 
 function AboutMe() {
 
@@ -14,10 +14,8 @@ function AboutMe() {
     return (
         <Container className='AboutMeBlock'>
             <Row>
-                <Col xxl={4} className='myImage'>
-                    <Image src={image} alt="Looking good" fluid/>
-                </Col>
-                <Col xxl={8} className='aboutMeText'>
+                <Col xl={4}><Image src={image} alt="Looking good" fluid/></Col>
+                <Col xl={8} className='aboutMeText'>
                     <h5>
                         Hello! Welcome to my website!
                     </h5>

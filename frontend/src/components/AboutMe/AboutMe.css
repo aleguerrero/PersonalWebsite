@@ -14,19 +14,14 @@
   margin-left: 15px;
 }
 
-.aboutMeText {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.myImage {
+.img-fluid {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media only screen and (max-width: 1399px) {
-  .testtext {
+  .aboutMeText {
     padding-top: 40px;
   }
-}
+} 
