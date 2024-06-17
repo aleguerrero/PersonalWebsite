@@ -11,7 +11,12 @@
   display: revert;
   list-style-type: disc;
   margin-top: 15px;
-  margin-left: 15px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.aboutMeText {
+  padding-right: 40px !important;
 }
 
 .img-fluid {
@@ -23,5 +28,6 @@
 @media only screen and (max-width: 1399px) {
   .aboutMeText {
     padding-top: 40px;
+    padding-left: 40px !important;
   }
 } 

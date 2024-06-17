@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -37,33 +37,35 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
-h1 {
+.App h1 {
   font-size: 70px;
+  margin: 45px
 }
 
-h2 { 
+.App h2 { 
   font-size: 58px;
+  margin: 45px;
 }
 
-h3 {
+.App h3 {
   font-size: 46px;
+  margin: 45px;
 }
-
 
 h1, h2, h3, h5 {
   font-family: 'Playfair Display', serif;
   color: #283618;
 }
 
-h5 {
+.App h5 {
   font-size: 24px;
   margin-top: 0px;
   margin-bottom: 20px;
 }
 
-ul {
+.App ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
