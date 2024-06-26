@@ -5,29 +5,33 @@
   padding: 40px;
   margin: 40px;
   background-color: #fcf7f2;
+  flex-direction: row;
 }
 
-.hobbiesList li {
+.hobbiesList li{
   display: revert;
   list-style-type: disc;
   margin-top: 15px;
-  margin-left: 30px;
-  margin-bottom: 15px;
+  margin-left: 15px;
 }
 
 .aboutMeText {
-  padding-right: 40px !important;
+  padding: 20 0;
+  width: 70%;
 }
 
-.img-fluid {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.myImage {
+  text-align: center;
+  margin: auto;
 }
 
-@media only screen and (max-width: 1399px) {
-  .aboutMeText {
-    padding-top: 40px;
-    padding-left: 40px !important;
+@media only screen and (max-width: 1024px) {
+  .AboutMeBlock {
+    flex-wrap: wrap;
   }
-} 
+
+  .aboutMeText {
+    padding: 10px 10px;
+    width: 100%;
+  }
+}

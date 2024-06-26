@@ -27,6 +27,7 @@ services:
   personalwebsite_backend:
     image: personalwebsite_backend:latest
     restart: always
+    build: ./backend
     ports:
       - 3000:3000
     environment:
@@ -35,6 +36,7 @@ services:
   personalwebsite_frontend:
     image: personalwebsite_frontend:latest
     restart: always
+    build: ./frontend
     ports:
       - 3001:3001
       - 9229:9229
