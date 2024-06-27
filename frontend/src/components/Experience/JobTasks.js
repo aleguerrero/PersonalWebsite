@@ -6,7 +6,7 @@ function JobTasks(props) {
         <div className="jobTasks">
             {props.tasks &&
                 props.tasks.map((task) => (
-                    <ul className='ulTasksSkillset'>
+                    <ul className='jobTasks task-skillset'>
                         <h5>
                             {task.jobName}
                         </h5>
@@ -22,12 +22,14 @@ function JobTasks(props) {
                                        </li>  
                                 ))}
                                 <h5 className="skillsetTitle">Skillset</h5>
-                                {task.skillset &&
-                                    task.skillset.map((skillset) => (
-                                       <li>
-                                           {skillset}
-                                       </li>  
-                                ))}
+                                <div className='task-block'>
+                                    {task.skillset &&
+                                        task.skillset.map((skillset) => (
+                                        <li>
+                                            {skillset}
+                                        </li>  
+                                    ))}
+                                </div>
                             </ul>
                         </li>
                     </ul>
