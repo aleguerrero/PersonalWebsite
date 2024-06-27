@@ -1,35 +1,45 @@
+@media only screen and (max-width: 1024px) {
+  .namingsBlock {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+} 
+
 .technologiesBlock {
   margin: 40px;
 }
 
 .techTypeBlock {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 40px 40px;
-  padding: 40px;
+  padding: 20px;
   background-color: #fcf7f2;
+  margin: 20px auto;
+  /* font-size: 12px; */
 }
 
-.titleTechs h3 {
-  margin-top: 0px;
-}
-
-.namingsBlock {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.titleTechs {
+  margin-bottom: 2.5%;
 }
 
 .techblock {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 40px;
-  padding: 40px;
+  margin: 40px 20px;
+  padding: 40px 40px;
   background-color: #f0e4d7;
   text-align: left;
 }
+
 
 .techblock ul li {
   margin-top: 15px;
   margin-left: 15px;
   display: revert;
   list-style-type: disc;
+}
+
+.namingsBlock {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

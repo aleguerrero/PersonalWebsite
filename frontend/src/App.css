@@ -5,18 +5,18 @@
 }
 
 .App h1 {
-  font-size: 2rem;
-  margin: 45px;
+  font-size: 4rem;
+  margin: 40px auto;
 }
 
 .App h2 {
-  font-size: 58px;
-  margin: 45px;
+  font-size: 3rem;
+  margin: 40px auto;
 }
 
 .App h3 {
-  font-size: 46px;
-  margin: 45px;
+  font-size: 2rem;
+  margin: 40px auto;
 }
 
 h1,
@@ -46,11 +46,5 @@ ul li {
 
   @media only screen and (max-width: 600px) {
     display: inline-flex;
-  }
-}
-
-h1 {
-  @media only screen and (max-width: 600px) {
-    word-break: break-all;
   }
 }
