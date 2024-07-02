@@ -25,14 +25,14 @@ function Hobbies() {
                     hobbies.map((hobby, id) => (
                         <div className='hobbyBlock'>
                             <div className='hobbyText'>
-                                <li key={id}>
-                                    <h5 className='titleHobby'>
-                                        {hobby.hobbyName}
-                                    </h5>
-                                    <span className='hobbyDescription'>
-                                        {hobby.description}
-                                    </span>
-                                </li>
+
+                                <h5 className='titleHobby'>
+                                    {hobby.hobbyName}
+                                </h5>
+                                <span className='hobbyDescription'>
+                                    {hobby.description}
+                                </span>
+
                             </div>
                             <HobbyImage imagePath={hobby.imagePath} />
                         </div>
