@@ -1,10 +1,17 @@
-.AboutMeBlock {
+.about-me-container {
+    width: 90%;
     display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction: column;
     text-align: justify;
     /* padding: 40px; */
-    margin: 40px;
-    background-color: #fcf7f2;
+    margin: 0 auto;
+    opacity: 0;
+    top: 150vh; /* Position below the initial viewport */
+    transition: opacity 3s ease;
+}
+
+.about-me-main {
+    display: flex;
 }
 
 .hobbiesList li{
@@ -14,14 +21,8 @@
     margin-left: 15px;
 }
 
-.aboutMeText {
-    width: 70%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
-}
-
 .myImage {
+    background-color: gray;
     text-align: center;
     margin: auto;
 }
