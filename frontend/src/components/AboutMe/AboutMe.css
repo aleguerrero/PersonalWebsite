@@ -1,28 +1,34 @@
 .about-me-container {
-    width: 90%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    /* padding: 40px; */
-    margin: 0 auto;
-    opacity: 0;
-    top: 150vh; /* Position below the initial viewport */
-    transition: opacity 3s ease;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
 }
 
 .about-me-main {
-    display: flex;
+  display: flex;
 }
 
-.hobbiesList li{
-    display: revert;
-    list-style-type: disc;
-    margin-top: 15px;
-    margin-left: 15px;
+
+.about-me-text {
+  margin-left: 40px;
+}
+
+.hobbiesList li {
+  display: revert;
+  list-style-type: disc;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 .myImage {
-    background-color: gray;
-    text-align: center;
-    margin: auto;
+  margin: auto;
+}
+
+img {
+  border-radius: 12px;
 }
