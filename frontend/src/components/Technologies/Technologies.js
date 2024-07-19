@@ -39,7 +39,8 @@ function Technologies() {
     
     return (
         <div>
-            <div className="technologiesBlock">
+            <div className="technologies-container" id="technologies">
+                <h2>Technologies</h2>
                 <TechsTypeData title="Programming Languages" techTypeList={programmingLanguages} />
                 <TechsTypeData title="Databases" techTypeList={databases} />
                 <TechsTypeData title="Public Cloud Providers" techTypeList={publicCloudProviders} />

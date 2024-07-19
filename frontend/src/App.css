@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .App {
-  text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -11,7 +10,7 @@
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 5em;
   color: #9B92B5;
 }
 
@@ -25,7 +24,7 @@ h3 {
 }
 
 
-h1, h2, h3, h5 {
+h1, h2{
   font-family: 'Playfair Display', serif;
 }
 
@@ -46,9 +45,9 @@ ul {
   position: relative;
 }
 
-.titles {
-  text-align: right;
+.titles-container {
   width: 50%;
+  text-align: right;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -56,6 +55,10 @@ ul {
   position: relative;
   opacity: 0;
   animation: fadeIn 3s ease forwards;
+}
+
+.titles-text {
+  width: 50%;
 }
 
 .options {
@@ -71,7 +74,7 @@ ul {
   font-size: 2rem;
   opacity: 0;
   animation: fadeIn 3s ease forwards;
-  animation-delay: 3s;
+  animation-delay: 1s;
 }
 
 a:hover{

@@ -4,9 +4,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    position: relative;
+    position: absolute;
     width: 90%;
-    margin: auto;
+    margin-left: 5%;
+    transition: opacity 3s ease;
 }
 
 .about-me-main {
