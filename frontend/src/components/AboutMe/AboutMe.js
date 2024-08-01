@@ -11,7 +11,7 @@ function AboutMe() {
     }
 
     return (
-        <div className='about-me-container' id="aboutMe">
+        <div className='about-me container' id="aboutMe">
             <h2 className='about-me-h2'>
                 About Me
             </h2>

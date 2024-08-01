@@ -1,19 +1,13 @@
-.about-me-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 90%;
-    margin-left: 5%;
-    transition: opacity 3s ease;
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .about-me-main {
   display: flex;
 }
-
 
 .about-me-text {
   margin-left: 40px;

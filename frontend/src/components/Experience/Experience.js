@@ -20,20 +20,23 @@ function Experience() {
     }, []);
 
     return (
-        <div className="experiences">
-            <ul>
-                {experiences &&
-                    experiences.map((experience, id) => (
-                        <li className="experienceBlock" key={id}>
-                            <ExperienceSummary
-                                companyName={experience.companyName}
-                                startedDate={experience.started}
-                                endedDate={experience.ended}
-                            />
-                            <JobTasks tasks={experience.jobs} />
-                        </li>
-                    ))}
-            </ul>
+        <div className="experiences container" id="experiences">
+            <h2>Experience</h2>
+            <div className="experiences-container">
+                <ul>
+                    {experiences &&
+                        experiences.map((experience, id) => (
+                            <li className="experienceBlock" key={id}>
+                                <ExperienceSummary
+                                    companyName={experience.companyName}
+                                    startedDate={experience.started}
+                                    endedDate={experience.ended}
+                                />
+                                <JobTasks tasks={experience.jobs} />
+                            </li>
+                        ))}
+                </ul>
+            </div> 
         </div>
     )
 

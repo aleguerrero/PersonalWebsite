@@ -1,20 +1,15 @@
 .technologies-container {
-  position: absolute;
-  top: 250vh; /* Position below the box */
   width: 90%;
   display: flex;
   flex-direction: column;
   margin-left: 5%;
   justify-content: center;
-  opacity: 0;
-  transition: opacity 3s ease;
 }
 
 .namingsBlock {
   width: 100%;
   display: flex;
   justify-content: center;
-  color: #3a235f;
 }
 
 .techblock {
@@ -22,6 +17,8 @@
   padding: 40px;
   background-color: #A28ECD;
   text-align: left;
+  border-radius: 12px;
+  color: #55348A;
 }
 
 .techblock ul li {

@@ -17,6 +17,7 @@ h1 {
 h2 { 
   font-size: 58px;
   color: #D8CDFB;
+  margin-top: 0;
 }
 
 h3 {
@@ -39,10 +40,10 @@ ul {
 }
 
 .main-page {
-  height: 100vh;
   display: flex;
   flex-direction: row;
   position: relative;
+  height: 100vh;
 }
 
 .titles-container {
@@ -55,6 +56,13 @@ ul {
   position: relative;
   opacity: 0;
   animation: fadeIn 3s ease forwards;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .titles-text {

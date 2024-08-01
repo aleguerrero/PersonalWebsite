@@ -1,54 +1,55 @@
-.experienceBlock {
-    display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: left;
-    padding: 40px;
-    margin: 40px;
-    background-color: #fcf7f2;
-}
+/* .experiences-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */
 
-.experienceSummary {
-    width: 25%;
-    border-right: 2px solid rgb(131, 131, 131);
-    padding-bottom: 5px;
-}
+/* .experienceBlock {
+  display: flex;
+  text-align: left;
+  padding: 40px;
+  margin: 40px;
+  background-color: #fcf7f2;
+} */
 
-h3, h5 {
-    color: #283618;
-}
+/* .experienceSummary {
+  width: 25%;
+  border-right: 2px solid rgb(131, 131, 131);
+  padding-bottom: 5px;
+} */
 
 .experienceSummary h3 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .experienceSummary h5 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .jobTasks {
-    margin-left: 40px;
-    width: 75%;
+  margin-left: 40px;
+  width: 75%;
 }
 
 .jobTasks h5 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .jobTasks .dates {
-    font-size: 0.75em;
-    color: rgb(131, 131, 131);
+  font-size: 0.75em;
+  color: rgb(131, 131, 131);
 }
 
 .taskBlock ul li {
-    margin-top: 15px;
-    margin-left: 15px;
-    font-size: 0.9em;
-    display: revert;
-    list-style-type: disc;
-    
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 0.9em;
+  display: revert;
+  list-style-type: disc;
 }
 
 .skillsetTitle {
-    padding-top: 20px;
+  padding-top: 20px;
 }
