@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-} */
+}
 
 /* .experienceBlock {
   display: flex;
@@ -19,11 +19,11 @@
   padding-bottom: 5px;
 } */
 
-.experienceSummary h3 {
+/* .experienceSummary h3 {
   margin-top: 5px;
-}
+} */
 
-.experienceSummary h5 {
+/* .experienceSummary h5 {
   margin-bottom: 5px;
 }
 
@@ -42,14 +42,75 @@
   color: rgb(131, 131, 131);
 }
 
-.taskBlock ul li {
-  margin-top: 15px;
-  margin-left: 15px;
-  font-size: 0.9em;
-  display: revert;
-  list-style-type: disc;
-}
 
 .skillsetTitle {
   padding-top: 20px;
+} */
+
+h3 {
+  margin-top: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.experienceBlock {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.experienceSummary {
+  width: 25%;
+  border-right: 1px solid #7F45C8;
+}
+
+.jobTasks {
+  width: 75%;
+  margin-left: 2em;
+}
+
+.taskBlock ul li {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.ulTasksSkillset h5 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.ulTasksSkillset {
+  border-bottom: 1px solid #553F71;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.ulTasksSkillset:first-child {
+  padding-top: 0;
+}
+
+.ulTasksSkillset:last-child {
+  border-bottom: 0;
+}
+
+.jobTasks .ulTasksSkillset h5:first-child {
+  margin-top: 0;
+}
+
+.skillset-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.skillset-name {
+  border: 1px solid #B345E7;
+  border-radius: 12px;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
 }

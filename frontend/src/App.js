@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe/AboutMe';
 import Experience from './components/Experience/Experience';
-// import Hobbies from './components/Hobbies/Hobbies';
+import Contact from './components/Contact/Contact';
 import Technologies from './components/Technologies/Technologies';
 
 function App() {
@@ -68,18 +68,14 @@ function App() {
             <li><a onClick={() => scrollToSection('aboutMe')}>About Me</a></li>
             <li><a onClick={() => scrollToSection('technologies')}>Technologies</a></li>
             <li><a onClick={() => scrollToSection('experiences')}>Experience</a></li>
-            {/*<li onClick={handleClickExperience}>Experience</li>
-            <li onClick={handleClickHobbies}>Hobbies</li>
-            <li onClick={handleClickContact}>Contact</li> */}
+            <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
           </ul>
         </div>
       </div>
-      {/* {isShownAboutMe && <AboutMe />} */}
       <AboutMe />
       <Technologies />
       <Experience />
-      {/* {isShownHobbies && <Hobbies />}
-      {isShownContact && "test"} */}
+      <Contact />
     </div>
   );
 }

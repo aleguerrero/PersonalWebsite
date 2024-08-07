@@ -22,12 +22,14 @@ function JobTasks(props) {
                                        </li>  
                                 ))}
                                 <h5 className="skillsetTitle">Skillset</h5>
-                                {task.skillset &&
-                                    task.skillset.map((skillset) => (
-                                       <li>
-                                           {skillset}
-                                       </li>  
-                                ))}
+                                <div className='skillset-container'>
+                                    {task.skillset &&
+                                        task.skillset.map((skillset) => (
+                                        <div className='skillset-name'>
+                                            {skillset}
+                                        </div>  
+                                    ))}
+                                </div>
                             </ul>
                         </li>
                     </ul>

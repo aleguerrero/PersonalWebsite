@@ -23,19 +23,17 @@ function Experience() {
         <div className="experiences container" id="experiences">
             <h2>Experience</h2>
             <div className="experiences-container">
-                <ul>
-                    {experiences &&
-                        experiences.map((experience, id) => (
-                            <li className="experienceBlock" key={id}>
-                                <ExperienceSummary
-                                    companyName={experience.companyName}
-                                    startedDate={experience.started}
-                                    endedDate={experience.ended}
-                                />
-                                <JobTasks tasks={experience.jobs} />
-                            </li>
-                        ))}
-                </ul>
+                {experiences &&
+                    experiences.map((experience, id) => (
+                        <div className="experienceBlock" key={id}>
+                            <ExperienceSummary
+                                companyName={experience.companyName}
+                                startedDate={experience.started}
+                                endedDate={experience.ended}
+                            />
+                            <JobTasks tasks={experience.jobs} />
+                        </div>
+                    ))}
             </div> 
         </div>
     )
