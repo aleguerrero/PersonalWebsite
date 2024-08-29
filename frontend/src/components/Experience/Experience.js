@@ -25,7 +25,7 @@ function Experience() {
             <div className="experiences-container">
                 {experiences &&
                     experiences.map((experience, id) => (
-                        <div className="experienceBlock" key={id}>
+                        <div className="experienceBlock box" key={id}>
                             <ExperienceSummary
                                 companyName={experience.companyName}
                                 startedDate={experience.started}

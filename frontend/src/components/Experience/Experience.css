@@ -63,12 +63,14 @@ ul {
 
 .experienceSummary {
   width: 25%;
+  text-align: right;
+  padding-right: 2em;
   border-right: 1px solid #7F45C8;
 }
 
 .jobTasks {
   width: 75%;
-  margin-left: 2em;
+  padding-left: 2em;
 }
 
 .taskBlock ul li {
