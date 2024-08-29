@@ -5,7 +5,7 @@ MongoClient.connect(url, function (err, db) {
     if (err) throw err;
     var dbo = db.db("personalWebsite");
     var myobj = [
-        { name: "Java", type: "ProgrammingLanguage", dateLearned: new Date("2016-09-01"), frameworks: ["Spring Boot", "Spring MVC"]},
+        { name: "Java", type: "ProgrammingLanguage", dateLearned: new Date("2016-09-01"), frameworks: ["Spring Boot", "Spring MVC"], imageUrl: "" },
         { name: "C#", type: "ProgrammingLanguage", dateLearned: new Date("2017-09-01") },
         { name: "Python", type: "ProgrammingLanguage", dateLearned: new Date("2018-05-01") },
         { name: "JavaScript", type: "ProgrammingLanguage", dateLearned: new Date("2018-01-01") },
