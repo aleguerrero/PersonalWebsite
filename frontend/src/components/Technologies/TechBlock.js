@@ -1,3 +1,5 @@
+import TechImage from "./TechImage";
+
 function TechBlock(props) {
 
     const learnedMonth = new Date(props.dateLearned).toLocaleString('default', { month: 'long' });
@@ -16,7 +18,7 @@ function TechBlock(props) {
     return (
         <div className="techblock">
             <h5>{props.name}</h5>
-            <p className="learnedOn">Learned on {learnedMonth + " " + learnedYear}</p>
+            {/* <p className="learnedOn">Learned on {learnedMonth + " " + learnedYear}</p>
             {boolFW ? (<b>Frameworks: </b>) : ("")}
             {boolT ? (<b>Tools: </b>) : ("")}
             <ul>
@@ -33,7 +35,8 @@ function TechBlock(props) {
                         <li>{t}</li>
                     ))
                 ) : ("")}
-            </ul>
+            </ul> */}
+            <TechImage name={props.name} type={props.type} imageName={props.imageName} />
         </div>
     );
 }

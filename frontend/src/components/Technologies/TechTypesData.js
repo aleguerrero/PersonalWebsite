@@ -3,18 +3,17 @@ import TechBlock from "./TechBlock";
 
 function TechsTypeData(props) {
     return (
-        <div className="techTypeBlock">
+        <div className="techTypeBlock box">
             <div className="titleTechs">
                 <h3>{props.title}</h3>
-            </div>
+        </div>
             <div className="namingsBlock">
                 {props.techTypeList
                     && props.techTypeList.map((ttl) => (
-                        <TechBlock name={ttl.name} dateLearned={ttl.dateLearned} frameworks={ttl.frameworks} tools={ttl.tools}/>
+                        <TechBlock name={ttl.name} type={ttl.type} imageName={ttl.imageName}/>
                     ))}
             </div>
         </div>
-
     );
 }
 

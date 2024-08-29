@@ -1,24 +1,33 @@
-.technologies-container {
-  width: 90%;
+.techTypeBlock {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.namings-container {
+  background-color: #55348a;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .namingsBlock {
-  width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .techblock {
-  margin: 40px;
   padding: 40px;
-  background-color: #A28ECD;
-  text-align: left;
+  width: 200px;
+  height: 200px;
+  background-color: #a28ecd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 12px;
-  color: #55348A;
+  color: #55348a;
 }
 
 .techblock ul li {
@@ -26,4 +35,12 @@
   margin-left: 15px;
   display: revert;
   list-style-type: disc;
+}
+
+.tech-image {
+  margin: auto;
+}
+
+.tech-image img {
+  border-radius: 0;
 }
