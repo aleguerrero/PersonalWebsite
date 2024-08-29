@@ -15,7 +15,7 @@ function AboutMe() {
             <h2 className='about-me-h2'>
                 About Me
             </h2>
-            <div className='about-me-main'>
+            <div className='about-me-main box'>
                 <div className='myImage'>
                     <img src={image} alt="Looking good" />
                 </div>
