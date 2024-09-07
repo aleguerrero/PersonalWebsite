@@ -4,7 +4,7 @@ function JobTasks(props) {
 
     return (
         <div className="jobTasks">
-            {props.tasks &&
+            {props.tasks.sort((a, b) => new Date(b.startedTimePosition) - new Date(a.startedTimePosition)) &&
                 props.tasks.map((task) => (
                     <ul className='ulTasksSkillset'>
                         <h5>
