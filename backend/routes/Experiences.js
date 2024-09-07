@@ -2,8 +2,6 @@ const router = require('express').Router();
 const experiences = require('../model/Experiences');
 
 router.get("", async (req, res) => {
-
-  console.log("on experiences!")
   console.log(process.env.DATABASE_URL)
 
   // Looks for experiences
