@@ -68,6 +68,10 @@ ul {
   border-right: 1px solid #7F45C8;
 }
 
+.startedDate {
+  margin-bottom: 2em;
+}
+
 .jobTasks {
   width: 75%;
   padding-left: 2em;
