@@ -26,11 +26,16 @@ services:
 
   personalwebsite_backend:
     image: personalwebsite_backend:latest
+    build: ./backend
     restart: always
     ports:
       - 3000:3000
-    environment:
-      DATABASE_URL: mongodb://appUserAdmin:secret@mongodb:27017/personalWebsite
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    env_file:
+      - "./backend/.env"
+    command: npm run dev
   
   personalwebsite_frontend:
     image: personalwebsite_frontend:latest
