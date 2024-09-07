@@ -7,7 +7,6 @@ app.listen(3000, () =>  {
 
 // initiates database
 const mongoose = require('mongoose');
-// require('dotenv').config();
 
 mongoose.connect(process.env.DATABASE_URL, () => console.log('Connected to DB!')).catch(error => console.log(error)); // process.env.DATABASE_URL
 
@@ -15,6 +14,7 @@ mongoose.connect(process.env.DATABASE_URL, () => console.log('Connected to DB!')
 const experienceRoute = require('./routes/Experiences');
 const technologyRoute = require('./routes/Technologies');
 const hobbyRoute = require('./routes/Hobbies');
+const emailRoute = require('./routes/Email')
 
 app.use(express.json());
 app.use((req, res, next) => {
@@ -26,3 +26,4 @@ app.use((req, res, next) => {
 app.use('/api/experiences', experienceRoute);
 app.use('/api/technologies', technologyRoute);
 app.use('/api/hobbies', hobbyRoute);
+app.use('/api/email', emailRoute);
