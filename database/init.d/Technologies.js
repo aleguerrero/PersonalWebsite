@@ -7,6 +7,7 @@ db.technologies.insertMany(
         { name: "SQL Server", type: "Database", dateLearned: new Date("2017-01-01"), imageName: "sqlserver.png" },
         { name: "Oracle", type: "Database", dateLearned: new Date("2017-09-01"), imageName: "oracle.png" },
         { name: "Firebase NoSQL", type: "Database", dateLearned: new Date("2018-05-01"), imageName: "firebase.png" },
+        { name: "PostgreSQL", type: "Database", dateLearned: new Date("2022-05-01"), imageName: "postgresql.png" },
         { name: "MongoDB", type: "Database", dateLearned: new Date("2022-01-01"), imageName: "mongodb.png" },
         { name: "Azure", type: "PublicCloudProviders", dateLearned: new Date("2018-09-01"), tools: ["VPNs", "Web Apps", "Virtual Machines", "Serverless Instances", "Databases", "Containers", "Blob Storage", "Monitoring and Insights", "AAD", "IAM"], imageName: "azure.png"},
         { name: "AWS", type: "PublicCloudProviders", dateLearned: new Date("2020-09-01"), tools: ["EC2", "EKS", "CloudFormation", "Databases with RDS and DynamoDB", "S3"], imageName: "aws.png" },

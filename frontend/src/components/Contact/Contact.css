@@ -9,20 +9,33 @@
   justify-content: center;
 }
 
-.contact-me-text {
-  width: 50%;
-}
-
 .contact-me-subtitle {
   font-size: 1.2em;
   font-weight: 500;
   line-height: 1.5;
   margin-top: 10px;
+  padding-right: 5em;
+}
+
+.contact-me-text {
+  width: 50%;
+  margin: auto;
 }
 
 
-.contact-me-form {
+.contact-me-form-wrapper {
   width: 50%;
+  max-width: 800px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fade-wrapper {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 
 ::placeholder {
@@ -41,6 +54,12 @@
   border: none;
   border-bottom: 1px solid #b345e7;
   padding-top: 1em;
+  padding-left: 0.5em;
+}
+
+.form-field:focus {
+  border-bottom: 1px solid #d8cdfb;
+  transition: 0.3s;
 }
 
 textarea {
@@ -51,11 +70,19 @@ textarea {
   font-size: 1.3em;
   color: rgb(226, 226, 226);
   padding-top: 1em;
+  padding-left: 0.5em;
+  border: 1px solid #b345e7;
+  border-radius: 12px;
+}
+
+textarea:focus {
+  border-bottom: 1px solid #d8cdfb;
+  transition: 0.7s;
 }
 
 button {
   margin-top: 1em;
-  padding: 0.5em;
+  padding: 0.5em 2em;
   border: 1px solid #b345e7;
   border-radius: 12px;
   background-color: transparent;
@@ -68,4 +95,12 @@ button:hover {
   color: rgb(68, 68, 68);
   transition: 0.7s;
   cursor: pointer;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }
